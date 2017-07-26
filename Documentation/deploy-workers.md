@@ -179,7 +179,7 @@ spec:
     command:
     - /hyperkube
     - proxy
-    - --master=${MASTER_HOST}
+    - --master=https://${MASTER_HOST}
     - --kubeconfig=/etc/kubernetes/worker-kubeconfig.yaml
     securityContext:
       privileged: true
